@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node dist/index.js",
     "test": "echo OK",
-    "build": "mkdir dist && cp src/* dist"
+    "build": "mkdir -p dist && cp -r src/*.js dist"
   },
   "repository": {
     "type": "git",
