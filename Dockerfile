@@ -1,2 +1,7 @@
 FROM node:12-alpine
-COPY . .
+
+WORKDIR /home/node
+
+COPY dist .
+
+CMD ["node", "index.js"]
