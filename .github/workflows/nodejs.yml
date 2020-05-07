@@ -21,8 +21,8 @@ jobs:
     - run: npm ci
     - run: npm test
     - run: npm run build --if-present
-    - name: Build docker image --tag gh-actions:latest
-      run: docker build .
+    - name: Build docker image
+      run: docker build . --tag gh-actions:latest
     - name: Export image
       run: docker image save gh-actions:latest -o latest.tgz
     - name: Archive image
