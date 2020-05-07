@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo OK",
     "build": "mkdir dist && cp src/* dist"
   },
